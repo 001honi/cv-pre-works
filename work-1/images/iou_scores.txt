@@ -1,0 +1,7 @@
+Label: person     IoU Score: 0.564
+Label: person     IoU Score: 0.687
+Label: person     IoU Score: 0.044
+Label: person     IoU Score: 0.490
+Label: bus        IoU Score: 0.857
+Label: person     IoU Score: 0.384
+Label: person     IoU Score: 0.634
