@@ -1,7 +1,8 @@
 # Ön-Çalışma-1
 ## SSD Detektörü ve IoU performans ölçümü
 
-MobileNET SSD, mobil cihazlarda çalışabilecek seviyede küçük boyutlu ve hızlı bir mimari olup COCO veri seti üzerinde eğitilmiş Caffe modeli, OpenCV'nin dnn modülüyle Python ortamına alındı.
+MobileNET SSD, mobil cihazlarda çalışabilecek seviyede küçük boyutlu ve hızlı bir mimari olup COCO veri seti üzerinde eğitilmiş [Caffe modeli](https://github.com/chuanqi305/MobileNet-SSD), OpenCV'nin dnn modülüyle Python ortamına alındı. 
+
 
 Bu model, 'background' dışında 20 farklı nesneyi tanıyabiliyor: <br>
 ["background", "aeroplane", "bicycle", "bird", "boat","bottle", "bus", "car", "cat", "chair", "cow", "diningtable",	"dog", "horse", "motorbike", "person", "pottedplant", "sheep","sofa", "train", "tvmonitor"]
