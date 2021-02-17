@@ -1,4 +1,5 @@
-## Ön-Çalışma-1
+# Ön-Çalışma-1
+## SSD Detektörü ve IoU performans ölçümü
 
 MobileNET SSD, mobil cihazlarda çalışabilecek seviyede küçük boyutlu ve hızlı bir mimari olup COCO veri seti üzerinde eğitilmiş Caffe modeli, OpenCV'nin dnn modülüyle Python ortamına alındı.
 
