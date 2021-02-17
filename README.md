@@ -1,2 +1,2 @@
-# cv-pre-works
-Learning steps for object detection and tracking
+# Bilgisayarlı Görü | Ön Çalışmalar
+### Ön-Çalışma-1: SSD Detektörü ve IoU performans ölçümü
