@@ -1,6 +1,7 @@
 # Bilgisayarlı Görü | Ön Çalışmalar
-### Ön-Çalışma-1: SSD Detektörü ve IoU performans ölçümü (tek-çerçeve)
+### Ön-Çalışma-1: <br>SSD Detektörü ve IoU performans ölçümü (tek-çerçeve)
 
+### Ön-Çalışma-2: <br>Nesne tespiti filtreleme & Detektörü Google Colab üzerinden Tesla T4 GPU ile ivmelendirme
 
 
 
