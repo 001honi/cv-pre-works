@@ -1,7 +1,7 @@
 # Ön-Çalışma-1
 ## SSD Detektörü ve IoU performans ölçümü
 
-MobileNET SSD, mobil cihazlarda çalışabilecek seviyede küçük boyutlu ve hızlı bir mimari olup COCO veri seti üzerinde eğitilmiş [Caffe modeli](https://github.com/chuanqi305/MobileNet-SSD), OpenCV'nin dnn modülüyle Python ortamına alındı. 
+MobileNET SSD, mobil cihazlarda çalışabilecek seviyede küçük boyutlu ve hızlı bir mimari olup COCO veri seti üzerinde eğitilmiş [Caffe modeli](https://github.com/chuanqi305/MobileNet-SSD), OpenCV'nin _dnn_ modülüyle Python ortamına alındı. 
 
 
 Bu model, 'background' dışında 20 farklı nesneyi tanıyabiliyor: <br>
@@ -11,7 +11,7 @@ Beyoğlu'nda çekilmiş bir görseli SSD detektörümüze giriş olarak verdiği
 <p align="center">
   <img src="https://github.com/001honi/cv-pre-works/blob/main/work-1/images/beyoglu_out.jpg" />
 </p>  
-
+<hr>
 _DarkLabel_ programı üzerinden el ile _ground truth_ etiketleme gerçekleştirildi ve text formatında düzenlendi. (gt_beyoglu.txt) <br>
 Benzer şekilde _ssd_detector.py_ scriptinde elde edilen tahmin sonuçları da aynı formatta yazdırıldı. (pr_beyoglu.txt) <br>
 
