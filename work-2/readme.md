@@ -19,6 +19,13 @@ Bu ön çalışmada kullanılan video örneğinin, benim bilgisayarımda Intel C
 [INFO] elapsed time: 13.11<br>
 [INFO] approx. FPS: 25.93<br>
 
+Aynı işlemi Google Colab CPU'su çalıştırdığımda 17 FPS elde ettim.
+>!python ssd_detector_with_gpu_acc.py --use-gpu False
+
+>[INFO] accessing video stream... <br>
+[INFO] elapsed time: 19.56 <br>
+[INFO] approx. FPS: 17.38 <br>
+
 Google Colab sunucularındaki standart OpenCV kütüphanesi versiyonu, (v4.4), Tesla K80 GPU'ları ile çalışmak istendiğinde hata vermektedir.
 >[INFO] setting preferable backend and target to CUDA...<br>
 Traceback (most recent call last):<br>
@@ -42,4 +49,5 @@ Uzun bir derleme süresinden sonra programı GPU ile çalıştırdığımda bekl
 [INFO] elapsed time: 26.47 <br>
 [INFO] approx. FPS: 12.85 <br>
 
-CUDA çekirdekleriyle ivmelendirilmiş süreç, işlemci performansından daha kötü bir sonuç verdi. Colab notebook ile drive bağlantısı arasında sorun yaşanmış olabilir veya uyguladığım derleme eskimiş olabilirdi. (Ekim, 2020) Küçük bir araştırma yaptığımda bu derleme üzerine yeni resmi güncellemeler geldiğini öğrendim. 
+CUDA çekirdekleriyle ivmelendirilmiş süreç, işlemci performansından daha kötü bir sonuç verdi. Colab notebook ile drive bağlantısında sorun yaşanmış olabilir veya uyguladığım derleme eskimiş olabilirdi. (Ekim, 2020) Küçük bir araştırma yaptığımda bu derleme üzerine yeni resmi güncellemeler geldiğini öğrendim. 
+
