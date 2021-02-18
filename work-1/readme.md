@@ -18,14 +18,14 @@ Benzer şekilde _ssd_detector.py_ scriptinde elde edilen tahmin sonuçları da a
 IoU hesaplanırken, etiketlenen ve tahmin ile üretilen sınırlayıcı kutu koordinatları aynı sırada bulunmayabilir; bunun için x1 koordinatları üzerinden iki liste de yeniden sıralandı. Ancak, detektörün farkına varmadığı nesneler tüm hesapların kaymasına neden olabilir. Bu sorunun üstesinden gelmek için daha karmaşık bir algoritma gerekmektedir, daha sonraki çalışmalarımda buna çözüm arayacağım.
 
 0.5 puan üzeri başarılı olarak nitelendiriliyor; aşağıda konsola yazdırılan IoU puanları bulunmaktadır. <br>
-Label: person     IoU Score: 0.564<br>
+> Label: person     IoU Score: 0.564<br>
 Label: person     IoU Score: 0.687<br>
 Label: person     IoU Score: 0.044<br>
 Label: person     IoU Score: 0.490<br>
 Label: bus        IoU Score: 0.857<br>
 Label: person     IoU Score: 0.384<br>
 Label: person     IoU Score: 0.634<br>
-<br>
+
 Anlaşılabilirliği artırmak için _ground truth_ bölgesi alpha=0.5 olacak şekilde transparan boyandı.
 <p align="center">
   <img src="https://github.com/001honi/cv-pre-works/blob/main/work-1/images/beyoglu_iou.jpg" />
