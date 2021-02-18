@@ -19,7 +19,7 @@ Bu ön çalışmada kullanılan video örneğinin, benim bilgisayarımda Intel C
 [INFO] elapsed time: 13.11<br>
 [INFO] approx. FPS: 25.93<br>
 
-Google Colab sunucularındaki standart OpenCV kütüphanesi versiyonu, (v4.4), Tesla T4 GPU'ları ile çalışmak istendiğinde hata vermektedir.
+Google Colab sunucularındaki standart OpenCV kütüphanesi versiyonu, (v4.4), Tesla K80 GPU'ları ile çalışmak istendiğinde hata vermektedir.
 >[INFO] setting preferable backend and target to CUDA...<br>
 Traceback (most recent call last):<br>
   File "ssd_detector_gpu.py", line 44, in <module>  net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)<br>
