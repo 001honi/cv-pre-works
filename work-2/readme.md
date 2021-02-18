@@ -49,5 +49,7 @@ Uzun bir derleme süresinden sonra programı GPU ile çalıştırdığımda bekl
 [INFO] elapsed time: 26.47 <br>
 [INFO] approx. FPS: 12.85 <br>
 
-CUDA çekirdekleriyle ivmelendirilmiş süreç, işlemci performansından daha kötü bir sonuç verdi. Colab notebook ile drive bağlantısında sorun yaşanmış olabilir veya uyguladığım derleme eskimiş olabilirdi. (Ekim, 2020) Küçük bir araştırma yaptığımda bu derleme üzerine yeni resmi güncellemeler geldiğini öğrendim. 
+CUDA çekirdekleriyle ivmelendirilmiş süreç, işlemci performansından daha kötü bir sonuç verdi. Colab notebook ile drive bağlantısında sorun yaşanmış olabilir veya uyguladığım derleme eskimiş olabilirdi. (Ekim, 2020) Küçük bir araştırma yaptığımda bu derleme üzerine yeni resmi güncellemeler geldiğini öğrendim.
+
+Bu konu üzerine yazılmış daha kapsamlı bloglar buldum; yapılacaklar listesine eklendi.
 
