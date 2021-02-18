@@ -33,3 +33,11 @@ Uyumsuzluk problemi, OpenCV'nin resmi olmayan bir versiyonuna güncellenerek gid
 %cd /content/build <br>
 !cmake -DOPENCV_EXTRA_MODULES_PATH=/content/opencv_contrib/modules  -DBUILD_SHARED_LIBS=OFF  -DBUILD_TESTS=OFF  -DBUILD_PERF_TESTS=OFF -DBUILD_EXAMPLES=OFF -DWITH_OPENEXR=OFF -DWITH_CUDA=ON -DWITH_CUBLAS=ON -DWITH_CUDNN=ON -DOPENCV_DNN_CUDA=ON /content/opencv <br>
 !make -j8 install
+
+Uzun bir derleme süresinden sonra programı GPU ile çalıştırdığımda beklenmedik bir sonuçla karşılaştım.
+>!python ssd_detector_gpu.py --use-gpu True
+
+>[INFO] setting preferable backend and target to CUDA... <br>
+[INFO] accessing video stream... <br>
+[INFO] elapsed time: 26.47 <br>
+[INFO] approx. FPS: 12.85 <br>
