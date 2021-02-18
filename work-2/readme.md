@@ -6,7 +6,7 @@ Aşağıdaki videoda _insan_ nesneleri tespit edilmek isteniyor, yeşil sınırl
 [![](http://img.youtube.com/vi/pvHzxhcg104/0.jpg)](http://www.youtube.com/watch?v=pvHzxhcg104 "MobileNET SSD | sample-1 | out-1")
   
 
-İstenmeyen nesneleri etiketleri üzerinden eleyebileceğimiz gibi tespit _confidence_ değerini yükselterek de modelin emin olamadığı tespitleri eleyebiliriz. Ancak burada bir trade-off olup bu değer yüksek tutulduğunda ise _insan_ nesnelerini kaçırabilmemiz söz konusudur. Burada, modeli _tracking_ algoritmaları ile desteklemek en iyi çözüme ulaşmamızı sağlayabilir.
+İstenmeyen nesneleri etiketleri üzerinden eleyebileceğimiz gibi tespit _confidence_ değerini yükselterek de modelin emin olamadığı tespitleri eleyebiliriz. Ancak burada bir trade-off olup bu değer yüksek tutulduğunda ise _insan_ nesnelerini kaçırabilmemiz söz konusudur. Bu noktada, modeli _tracking_ algoritmaları ile desteklemek en iyi çözüme ulaşmamızı sağlayabilir.
 
 [![](http://img.youtube.com/vi/Rt-f-1R0pYY/0.jpg)](http://www.youtube.com/watch?v=Rt-f-1R0pYY "MobileNET SSD | sample-1 | out-2")
 
