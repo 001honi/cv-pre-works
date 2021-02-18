@@ -1,5 +1,5 @@
 # Ön-Çalışma-2
-## Nesne tespiti filtreleme & Detektörü Google Colab üzerinden Tesla T4 GPU ile ivmelendirme
+## Nesne tespiti filtreleme & Detektörü Google Colab üzerinden Tesla K80 GPU ile ivmelendirme
 
 Aşağıdaki videoda _insan_ nesneleri tespit edilmek isteniyor, yeşil sınırlayıcı kutular _insan_ nesnelerini temsil ederken istenmeyen _insan_ dışındaki tüm nesneler ise kırmızı kutular içerisinde yer alsın. _Video görüntüleri YouTube linkiyle sağlanmaktadır, **videos** klasöründe .avi formatında bulunabilir._
 
@@ -18,3 +18,18 @@ Bu ön çalışmada kullanılan video örneğinin, benim bilgisayarımda Intel C
 >[INFO] accessing video stream...<br>
 [INFO] elapsed time: 13.11<br>
 [INFO] approx. FPS: 25.93<br>
+
+Google Colab sunucularındaki standart OpenCV kütüphanesi versiyonu, (v4.4), Tesla T4 GPU'ları ile çalışmak istendiğinde hata vermektedir.
+>[INFO] setting preferable backend and target to CUDA...<br>
+Traceback (most recent call last):<br>
+  File "ssd_detector_gpu.py", line 44, in <module>  net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)<br>
+AttributeError: module 'cv2.dnn' has no attribute 'DNN_BACKEND_CUDA'
+  
+Uyumsuzluk problemi, OpenCV'nin resmi olmayan bir versiyonuna güncellenerek giderilebiliyor; ancak, bu güncelleme için OpenCV'nin yeniden derlenmesi gerekmekte ve bu işlem oldukça zaman almakta. İlerleyen süreçte bir düzenleme olacağına inanıyorum.
+>%cd /content <br>
+!git clone https://github.com/opencv/opencv <br>
+!git clone https://github.com/opencv/opencv_contrib <br>
+!mkdir /content/build <br>
+%cd /content/build <br>
+!cmake -DOPENCV_EXTRA_MODULES_PATH=/content/opencv_contrib/modules  -DBUILD_SHARED_LIBS=OFF  -DBUILD_TESTS=OFF  -DBUILD_PERF_TESTS=OFF -DBUILD_EXAMPLES=OFF -DWITH_OPENEXR=OFF -DWITH_CUDA=ON -DWITH_CUBLAS=ON -DWITH_CUDNN=ON -DOPENCV_DNN_CUDA=ON /content/opencv <br>
+!make -j8 install
