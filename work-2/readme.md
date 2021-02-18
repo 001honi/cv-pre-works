@@ -35,9 +35,11 @@ Uyumsuzluk problemi, OpenCV'nin resmi olmayan bir versiyonuna güncellenerek gid
 !make -j8 install
 
 Uzun bir derleme süresinden sonra programı GPU ile çalıştırdığımda beklenmedik bir sonuçla karşılaştım.
->!python ssd_detector_gpu.py --use-gpu True
+>!python ssd_detector_with_gpu_acc.py --use-gpu True
 
 >[INFO] setting preferable backend and target to CUDA... <br>
 [INFO] accessing video stream... <br>
 [INFO] elapsed time: 26.47 <br>
 [INFO] approx. FPS: 12.85 <br>
+
+CUDA çekirdekleriyle ivmelendirilmiş süreç, işlemci performansından daha kötü bir sonuç verdi. Colab notebook ile drive bağlantısı arasında sorun yaşanmış olabilir veya uyguladığım derleme eskimiş olabilirdi. (Ekim, 2020) Küçük bir araştırma yaptığımda bu derleme üzerine yeni resmi güncellemeler geldiğini öğrendim. 
