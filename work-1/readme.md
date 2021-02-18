@@ -5,7 +5,7 @@ MobileNET SSD, mobil cihazlarda çalışabilecek seviyede küçük boyutlu ve h�
 
 
 Bu model, 'background' dışında 20 farklı nesneyi tanıyabiliyor: <br>
-["background", "aeroplane", "bicycle", "bird", "boat","bottle", "bus", "car", "cat", "chair", "cow", "diningtable",	"dog", "horse", "motorbike", "person", "pottedplant", "sheep","sofa", "train", "tvmonitor"]
+>["background", "aeroplane", "bicycle", "bird", "boat","bottle", "bus", "car", "cat", "chair", "cow", "diningtable",	"dog", "horse", "motorbike", "person", "pottedplant", "sheep","sofa", "train", "tvmonitor"]
 
 Beyoğlu'nda çekilmiş bir görseli SSD detektörümüze giriş olarak verdiğimizde, aşağıdaki çıktıyı vermektedir. Tren için otobüs tahmininde bulunması hayal kırıklığı yaratsa da bu çalışmanın asıl amacı yüksek başarım elde etmek değil; modelin performansını 'Intersection over Union' metriği ile hesaplamaktır.
 <p align="center">
