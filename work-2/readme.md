@@ -3,8 +3,8 @@
 
 MobileNET SSD modeliyle, aşağıdaki videoda _insan_ nesneleri tespit edilmek isteniyor, yeşil sınırlayıcı kutular _insan_ nesnelerini temsil ederken istenmeyen _insan_ dışındaki tüm nesneler ise kırmızı kutular içerisinde yer alsın. _Video görüntüleri YouTube linkiyle sağlanmaktadır, **videos** klasöründe .avi formatında bulunabilir._
 
-[![](http://img.youtube.com/vi/pvHzxhcg104/0.jpg)](http://www.youtube.com/watch?v=pvHzxhcg104 "MobileNET SSD | sample-1 | out-1")
-  
+[![MobileNET SSD | sample-1 | out-1](videos/race_out_1.gif)](http://www.youtube.com/watch?v=pvHzxhcg104)
+
 
 İstenmeyen nesneleri etiketleri üzerinden eleyebileceğimiz gibi tespit _confidence_ değerini yükselterek de modelin emin olamadığı tespitleri eleyebiliriz. Ancak burada bir trade-off olup bu değer yüksek tutulduğunda ise _insan_ nesnelerini kaçırabilmemiz söz konusudur. Bu noktada, modeli _tracking_ algoritmaları ile desteklemek en iyi çözüme ulaşmamızı sağlayabilir.
 
