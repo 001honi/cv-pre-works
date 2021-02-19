@@ -1,5 +1,5 @@
 # Ön-Çalışma-2
-## Nesne tespiti filtreleme & Detektörü Google Colab üzerinden Tesla K80 GPU ile ivmelendirme
+## Nesne tespiti filtreleme 
 
 MobileNET SSD modeliyle, aşağıdaki videoda _insan_ nesneleri tespit edilmek isteniyor, yeşil sınırlayıcı kutular _insan_ nesnelerini temsil ederken istenmeyen _insan_ dışındaki tüm nesneler ise kırmızı kutular içerisinde yer alsın. _Video görüntüleri YouTube linkiyle sağlanmaktadır, **videos** klasöründe .avi formatında bulunabilir._
 
@@ -10,7 +10,7 @@ MobileNET SSD modeliyle, aşağıdaki videoda _insan_ nesneleri tespit edilmek i
 
 [![MobileNET SSD | sample-1 | out-2](videos/race_out_2.gif)](http://www.youtube.com/watch?v=Rt-f-1R0pYY)
 
-<hr>
+## Detektörü Google Colab üzerinden Tesla K80 GPU ile ivmelendirme
 
 Önceki çalışmada tek bir çerçevede nesne tespiti yapılmıştı; video üzerinde çalışıldığında ise CPU donanımları yetersiz kalabilmektedir. 
 
