@@ -19,7 +19,7 @@ Bu ön çalışmada kullanılan video örneğinin, benim bilgisayarımda Intel C
 [INFO] elapsed time: 13.11<br>
 [INFO] approx. FPS: 25.93<br>
 
-Aynı işlemi Google Colab CPU'su çalıştırdığımda 17 FPS elde ettim.
+Aynı işlemi Google Colab CPU'su ile çalıştırdığımda 17 FPS elde ettim.
 >!python ssd_detector_with_gpu_acc.py --use-gpu False
 
 >[INFO] accessing video stream... <br>
