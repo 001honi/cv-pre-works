@@ -1,7 +1,7 @@
 # Ön-Çalışma-3
 ## CSRT & KCF ile Çoklu Nesnelerin Takibi
 
-### v1: Seri İşleme
+## v1: Seri İşleme
 
 _tracker_v1.py_ scripti ile, seçilen takip algoritmasında (CSRT veya KCF) ve istenen _tracker_ sayısında nesne takibi yapmak mümkündür. Bu ilkel versiyonunda, _tracker_ lara ilk nesne sınırlayıcı kutuları el ile seçilerek verilmektedir. Her bir nesne için ayrı ayrı başlatılan _tracker_ lar listeye atılmakta ve okunan her frame için liste dönmektedir.   
 
@@ -17,9 +17,8 @@ _tracker_v1.py_ scripti ile, seçilen takip algoritmasında (CSRT veya KCF) ve i
 
 ![v1_KCF_4](videos/race_v1_KCF_4.gif) <br>
 
-<hr>
 
-### v2: Python 'Multiprocessing' Kütüphanesiyle Paralel İşleme
+## v2: Python 'Multiprocessing' Kütüphanesiyle Paralel İşleme
 
 _tracker_v2.py_ scripti ile, çoklu nesne takipçisine paralel işlem yapma yeteneği kazandırıldı. 
 
@@ -27,9 +26,8 @@ _tracker_v2.py_ scripti ile, çoklu nesne takipçisine paralel işlem yapma yete
 
 ![v2_CSRT_4](videos/race_v2_CSRT_4.gif) <br>
 
-<hr>
 
-### v3: Paralel işlem yetenekli Tracker & SSD detektörü
+## v3: Paralel işlem yetenekli Tracker & SSD detektörü
 
 _tracker_v3.py_ scripti ile, nesne tespiti Single-Shot-Detector ile yapılmaktadır.
 
