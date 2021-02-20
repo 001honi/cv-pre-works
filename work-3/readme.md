@@ -17,6 +17,8 @@ _tracker_v1.py_ scripti ile, seçilen takip algoritmasında (CSRT veya KCF) ve i
 
 ![v1_KCF_4](videos/race_v1_KCF_4.gif)
 
+<hr>
+
 ### v2: Python 'Multiprocessing' Kütüphanesiyle Paralel İşleme
 
 _tracker_v2.py_ scripti ile çoklu nesne takipçisine paralel işlem yapma yeteneği kazandırıldı. 
