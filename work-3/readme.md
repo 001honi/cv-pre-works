@@ -40,3 +40,6 @@ _tracker_v3.py_ scripti ile, nesne tespiti Single-Shot-Detector ile yapılmaktad
 > _Tracker_ lar nesne takibini kaybettiğinde detektör yeniden çalıştırılıyor ve performans kaybı düşürülmeye çalışılıyor. (**~12 FPS**)
 
 ![v3_CSRT_SSD_2](videos/race_v3_CSRT_SSD_2.gif)
+
+> Aynı nesne için oluşturulan yakın sınırlayıcı kutulardan gereksiz olanın **non-maximum supression** tekniği ile bastırılması mümkündür.
+
