@@ -85,15 +85,3 @@ while True:
 
 vs.release()
 cv2.destroyAllWindows()
-        
-
-    
-
-
-
-
-
-
-
-
-tracker = cv2.TrackerKCF_create()
