@@ -3,7 +3,7 @@
 
 ### Ön-Çalışma-2: <br>Nesne tespiti filtreleme & Detektörü Google Colab üzerinden Tesla K80 GPU ile ivmelendirme
 
-### Ön-Çalışma-3: <br>Nesne takibi
+### Ön-Çalışma-3: <br>Çoklu Nesne Takibi
 
 
 <br><br><br>
