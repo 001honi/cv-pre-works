@@ -1,0 +1,1 @@
+Download YOLOv3 weights from this [link.](https://pjreddie.com/darknet/yolo/)
