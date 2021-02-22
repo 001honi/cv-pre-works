@@ -3,11 +3,11 @@
 
 Bu çalışmada, COCO veri setinde eğitilmiş 80 farklı nesne tanıyan YOLOv3 modeli kullanıldı. 
 
-_yolo_detector.py_ scripti, verilen video içerisindeki her frame ile YOLO modelini beslemekte çıkışlarını işaretlemektedir. İşlemci üzerinde çalıştığından oldukça düşük bir FPS değeri elde edilmektedir. 
+_yolo_detector.py_ scripti, verilen video içerisindeki her frame ile YOLO modelini beslemekte çıkışlarını işaretlemektedir. İşlemci üzerinde çalıştığından oldukça düşük bir FPS değeri elde edilmektedir. Videonun tamamı **videos** klasöründe bulunmaktadır.
 
 - Toplamda 751 çerçeve içeren 25 saniyelik videonun işlenmesi 572 saniye sürmekte ve bu süre bize 1.31 FPS değerini vermektedir. 
 
-[![](http://img.youtube.com/vi/THE7GwAWriU/0.jpg)](http://www.youtube.com/watch?v=THE7GwAWriU "YOLO")
+![YOLO](videos/sample_YOLO.gif) <br>
 
 >YOLO <br>
 >Elapsed time: 572.554 secs <br>
