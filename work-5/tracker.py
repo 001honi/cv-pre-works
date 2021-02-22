@@ -16,9 +16,9 @@ class Tracker():
         self.label_id = None
         self.conf     = None
 
-    def __del__(self):
+    # def __del__(self):
         # print(f"Tracker {self.tracker_id} is DELETED")
-        pass
+        # pass
 
     def start(self, frame_id, frame, detection):
         self.frame_id = frame_id
