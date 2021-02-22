@@ -1,4 +1,4 @@
-# Ön-Çalışma-4
+# Ön-Çalışma-5
 ## Python Nesne Yönelimli Programlama | YOLO Detektörü & Tracker (Yüksek FPS)   
 
 Bu çalışmada, COCO veri setinde eğitilmiş 80 farklı nesne tanıyan YOLOv3 modeli kullanıldı. 
