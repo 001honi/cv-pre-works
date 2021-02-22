@@ -7,11 +7,14 @@ _yolo_detector.py_ scripti, verilen video içerisindeki her frame ile YOLO model
 
 - Toplamda 751 çerçeve içeren 25 saniyelik videonun işlenmesi 572 saniye sürmekte ve bu süre bize 1.31 FPS değerini vermektedir. 
 
-![YOLO](videos/sample_YOLO.gif) <br>
+[![](http://img.youtube.com/vi/THE7GwAWriU/0.jpg)](http://www.youtube.com/watch?v=THE7GwAWriU "YOLO")
 
 >YOLO <br>
 >Elapsed time: 572.554 secs <br>
 >Average FPS : 1.31 <br>
+
+- Video sonuna doğru detektör insan nesnesini algılayamıyor; burada bir _tracking_ gerçekleşirse sınırlayıcı kutu bisiklet üzerindeki insanı izlemeye devam edecektir.
+
 
 <hr>
 
