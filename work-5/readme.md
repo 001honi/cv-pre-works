@@ -9,7 +9,7 @@ Bu çalışmada, COCO veri setinde eğitilmiş 80 farklı nesne tanıyan YOLOv3 
 
 - Bir önceki çalışmayla karşılaştırıldığında, yaklaşık 8 kat FPS artışı sağlandı.  
 
-[![](http://img.youtube.com/vi/THE7GwAWriU/0.jpg)](http://www.youtube.com/watch?v=THE7GwAWriU "YOLO")
+![YOLO_30_CSRT](videos/sample_YOLO_30_CSRT.gif) <br>
 
 >YOLO_30_CSRT <br>
 >Elapsed time: 72.333 secs <br>
