@@ -14,5 +14,3 @@
 
 <br><br><br>
 Ön çalışmalar sırasında Adrian Rosebrock, PhD (pyimagesearch.com) blog sayfasından yoğun olarak faydalanılmıştır.
-
-https://github.com/001honi/hand-gest-recog
