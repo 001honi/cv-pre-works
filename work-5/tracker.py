@@ -17,26 +17,24 @@ class Tracker():
         self.conf     = None
 
     # def __del__(self):
-        # print(f"Tracker {self.tracker_id} is DELETED")
-        # pass
+    #     print(f"Tracker {self.tracker_id} is DELETED")
+    # #     pass
 
-    def start(self, frame_id, frame, detection):
-        self.frame_id = frame_id
+    def start(self, f, frame, detection):
+        self.frame_id = f
         self.label_id = detection[1]
         self.conf     = detection[2]
         self.tracker.init(frame, detection[0])
 
-    def update(self, frame_):
+    def update(self, frame):
         '''
         Tracks the object in next frame. 
         Returns 
-        frame_detection =
-                ( frame_id, (box,label_id,conf) )
+        detection =
+                (box,label_id,conf) 
                 or 
-                ( frame_id, None )
+                None 
         '''
-        # parsing input
-        frame_id, frame = frame_
         # return value
         detection = None
 
@@ -44,7 +42,7 @@ class Tracker():
         if success:
             detection = (box, self.label_id, self.conf)
 
-        return (frame_id, detection)
+        return detection
 
 
     

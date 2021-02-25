@@ -9,41 +9,40 @@ tracker_type = "CSRT"
 N = 30
 title = f"YOLO_{N}_{tracker_type}"
 
+video = Video(path)
+video.read_frames()
+(H,W) = video.shape
+
+yolo = YOLO(conf_thresh=0.65, nms_thresh=0.5)
+yolo.prepare_network()
+
 if __name__ == "__main__":
-
-    video = Video(path)
-    video.read_frames()
-    (H,W) = video.shape
-
-    yolo = YOLO(conf_thresh=0.65, nms_thresh=0.5)
-    yolo.prepare_network()
 
     start_time = time.time()
 
+    print("[INFO] Detections are collecting..")
     for f in tqdm(range(video.total_frame)):
         if f % N == 0:
             # yolo detection
-            frame_detections = yolo.detect(video.frames_inp[f],H,W)
-            # start trackers
-            frame_id, detections = frame_detections
+            detections = yolo.detect(video.frames_inp[f],H,W)
             if detections:
                 trackers = []
-                frame = video.frames_inp[frame_id][1]  # pick the related frame
+                frame = video.frames_inp[f]  # pick the related frame
                 for detection in detections:
-                    trackers.append(Tracker(tracker_type))
-                    trackers[-1].start(frame_id, frame, detection)
+                    if detection:
+                        trackers.append(Tracker(tracker_type))
+                        trackers[-1].start(f, frame, detection)
         else:
-            frame_detections = []
+            detections = []
             for tracker in trackers:
-                frame_detection = tracker.update(video.frames_inp[f])
-                frame_id, detection = frame_detection
+                detection = tracker.update(video.frames_inp[f])
                 if detection:
-                    frame_detections.append(detection)
+                    detections.append(detection)
 
-            frame_detections = (f, frame_detections)
+            frame_detections = (f,detections)
 
         fps = (f+1)/(time.time()-start_time)
-        video.put_frame(frame_detections, fps, YOLO.LABELS, YOLO.COLORS)
+        video.put_frame(f,detections,LABELS=YOLO.LABELS,COLORS=YOLO.COLORS,fps=fps)
 
     video.write(f"videos/sample_{title}.avi")
 

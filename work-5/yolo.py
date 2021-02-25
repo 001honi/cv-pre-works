@@ -23,19 +23,17 @@ class YOLO():
         self.network = net
         self.lyr_names = lyr_names
 
-    def detect(self,frame_,H,W):
+    def detect(self,frame,H,W):
         """
         Detects the objects on given one frame.
         Returns 
-        frame_detections =
-                ( frame_id, [(box,label_id,conf), (...)] )
+        detections =
+                [(box,label_id,conf), (...)] 
                 or 
-                ( frame_id, None )
+                None 
         """
-        # parsing input
-        frame_id, frame = frame_
         # return value
-        frame_detections = None
+        detections = None
         # detection result containers
         boxes = [] ; confs = [] ; label_ids = []
 
@@ -67,11 +65,11 @@ class YOLO():
         # non-maxima-suppression
         idxs = cv2.dnn.NMSBoxes(boxes, confs, self.conf_thresh, self.nms_thresh)    
         if len(idxs):
-            frame_detections = []
+            detections = []
             for idx in idxs.flatten():
-                box      = boxes[idx]
+                box      = tuple(boxes[idx])
                 conf     = confs[idx]
                 label_id = label_ids[idx]
-                frame_detections.append((box,label_id,conf))
+                detections.append((box,label_id,conf))
 
-        return (frame_id, frame_detections)
+        return detections
