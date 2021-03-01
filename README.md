@@ -3,7 +3,7 @@
 
 ### [Ön-Çalışma-1:](work-1) <br>SSD Detektörü ve IoU Performans Ölçümü (tek-çerçeve)
 
-### [Ön-Çalışma-2:](work-2) <br>Nesne tespiti filtreleme & Detektörü Google Colab üzerinden Tesla K80 GPU ile ivmelendirme
+### [Ön-Çalışma-2:](work-2) <br>Nesne tespiti filtreleme & Detektörü Google Colab üzerinden Tesla T4 GPU ile ivmelendirme
 
 ### [Ön-Çalışma-3:](work-3) <br>CSRT & KCF ile Çoklu Nesnelerin Takibi | Multiprocessing | SSD
 
