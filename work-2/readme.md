@@ -10,7 +10,7 @@ MobileNET SSD modeliyle, aşağıdaki videoda _insan_ nesneleri tespit edilmek i
 
 [![MobileNET SSD | sample-1 | out-2](videos/race_out_2.gif)](http://www.youtube.com/watch?v=Rt-f-1R0pYY)
 
-## Detektörü Google Colab üzerinden Tesla K80 GPU ile ivmelendirme
+## Detektörü Google Colab üzerinden Tesla T4 GPU ile ivmelendirme
 
 Önceki çalışmada tek bir çerçevede nesne tespiti yapılmıştı; video üzerinde çalışıldığında ise CPU donanımları yetersiz kalabilmektedir. 
 
@@ -26,7 +26,7 @@ Aynı işlemi Google Colab CPU'su ile çalıştırdığımda 17 FPS elde ettim.
 [INFO] elapsed time: 19.56 <br>
 [INFO] approx. FPS: 17.38 <br>
 
-Google Colab sunucularındaki standart OpenCV kütüphanesi versiyonu, (v4.4), Tesla K80 GPU'ları ile çalışmak istendiğinde hata vermektedir.
+Google Colab sunucularındaki standart OpenCV kütüphanesi versiyonu, (v4.4), Tesla T4 GPU'ları ile çalışmak istendiğinde hata vermektedir.
 >[INFO] setting preferable backend and target to CUDA...<br>
 Traceback (most recent call last):<br>
   File "ssd_detector_gpu.py", line 44, in <module>  net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)<br>
