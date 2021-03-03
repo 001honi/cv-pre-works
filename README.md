@@ -11,7 +11,7 @@
 
 ### [Ön-Çalışma-5:](work-5) <br>Python Nesne Yönelimli Programlama | YOLO Detektörü & Tracker (Yüksek FPS)   
 
-### [Ön-Çalışma-6:](work-6) <br>Mask R-CNN ile Bölütleme  
+### [Ön-Çalışma-6:](work-6) <br>Mask R-CNN ile Bölütleme (Segmentasyon)  
 
 
 
