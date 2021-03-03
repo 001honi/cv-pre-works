@@ -11,6 +11,9 @@
 
 ### [Ön-Çalışma-5:](work-5) <br>Python Nesne Yönelimli Programlama | YOLO Detektörü & Tracker (Yüksek FPS)   
 
+### [Ön-Çalışma-6:](work-6) <br>Mask R-CNN ile Bölütleme  
+
+
 
 <br><br><br>
 Ön çalışmalar sırasında Adrian Rosebrock, PhD (pyimagesearch.com) blog sayfasından yoğun olarak faydalanılmıştır.
