@@ -1,5 +1,5 @@
-# Ön-Çalışma-5
-## Python Nesne Yönelimli Programlama | YOLO Detektörü & Tracker (Yüksek FPS)   
+# Ön-Çalışma-6
+## Mask R-CNN ile Bölütleme (Segmentasyon)     
 
 Bu çalışmada, COCO veri setinde eğitilmiş 80 farklı nesne tanıyan YOLOv3 modeli kullanıldı. 
 
