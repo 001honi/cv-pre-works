@@ -9,7 +9,6 @@ Bu çalışmada, COCO veri setinde eğitilmiş 80 farklı nesne tanıyan Mask R-
 
 ![MaskRCNN](videos/sample_YOLO_30_CSRT.gif) <br>
 
->YOLO_30_CSRT <br>
->Elapsed time: 72.333 secs <br>
->Average FPS : 10.38 <br>
-
+>MASK_RCNN <br>
+>Elapsed time: 932.510 secs <br>
+>Average FPS : 0.09 <br>
