@@ -1,5 +1,5 @@
 # Bilgisayarlı Görü | Ön Çalışmalar
-### [Ön-Çalışma-0:](https://github.com/001honi/hand-gest-recog) <br>Statik El Hareketlerini Sınıflandırma & Gerçek Zamanlı Arayüz ile Destekleme
+### [Ön-Çalışma-0:](work-0) <br>Statik El Hareketlerini Sınıflandırma & Gerçek Zamanlı Arayüz ile Destekleme
 
 ### [Ön-Çalışma-1:](work-1) <br>SSD Detektörü ve IoU Performans Ölçümü (tek-çerçeve)
 
