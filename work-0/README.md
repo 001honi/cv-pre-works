@@ -6,5 +6,5 @@ This project is evolved into a touchless design for automats with a motivation o
 https://www.youtube.com/watch?v=K69YdKOAW74
 
 <p align="center">
-  <img src="https://github.com/001honi/hand-gest-recog/blob/main/image/final_demo.png" />
+  <img src="https://github.com/001honi/hand-gest-recog/blob/main/assets/final_demo.png" />
 </p>  
