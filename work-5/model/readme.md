@@ -1,1 +1,1 @@
-Download YOLOv3 weights from this [link.](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5)
+Download YOLOv3 weights from this [link.](https://pjreddie.com/darknet/yolo/)
