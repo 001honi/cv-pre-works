@@ -1,18 +1,15 @@
 # Ön-Çalışma-6
 ## Mask R-CNN ile Bölütleme (Segmentasyon)     
 
-Bu çalışmada, COCO veri setinde eğitilmiş 80 farklı nesne tanıyan YOLOv3 modeli kullanıldı. 
+Bu çalışmada, COCO veri setinde eğitilmiş 80 farklı nesne tanıyan Mask R-CNN modeli kullanıldı. 
 
-Çerçeve okuma yazma için **Video** sınıfı, nesne tespiti için **YOLO** ve izleyici için **Tracker** sınıfları oluşturuldu. Bu sayede farklı bir nesne tespiti modeli uygulanmak istendiğinde yalnızca _yolo.py_ değiştirilmesi yeterli olacak.
+Önceki çalışmalardan farklı olarak Mask R-CNN, segmentasyon sayesinde, nesneye ait olan pikselleri de tespit etmektedir. 
 
-- Aşağıdaki çıktı videosunda her 30 çerçevede bir YOLOv3 detektörü ile nesne tespiti sağlanmış ve aradaki çerçevelerde CSRT izleyicileri ile takibe devam edilmiştir.
+- Segmentasyon daha yüksek işlem gücü gerektirdiğinden, saniye başına işlenen çerçeve sayısında düşüş gözlemlenmekte.  
 
-- Bir önceki çalışmayla karşılaştırıldığında, yaklaşık 8 kat FPS artışı sağlandı.  
-
-![YOLO_30_CSRT](videos/sample_YOLO_30_CSRT.gif) <br>
+![MaskRCNN](videos/sample_YOLO_30_CSRT.gif) <br>
 
 >YOLO_30_CSRT <br>
 >Elapsed time: 72.333 secs <br>
 >Average FPS : 10.38 <br>
 
-- Yine bir önceki çalışmada dikkat çekilen video sonundaki kaybedilen insan, izleyiciler ile hala takip edilebildiği gözlemlendi.
