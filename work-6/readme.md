@@ -13,7 +13,7 @@ Bu çalışmada, COCO veri setinde eğitilmiş 80 farklı nesne tanıyan Mask R-
 
 ![MaskRCNN](videos/sample_MaskRCNN.gif) <br>
 
-- Segmentasyon daha yüksek işlem gücü gerektirdiğinden, saniye başına işlenen çerçeve sayısında düşüş gözlemlenmekte.  
+Colab GPU'ları ile *batch size = 1* olacak şekilde, yani her defasında GPU tek bir kare üzerinde çalışarak, çalıştırılarak elde edilen FPS sonucu:  
 >MASK_RCNN <br>
->Elapsed time: 932.510 secs <br>
->Average FPS : 0.09 <br>
+>Elapsed time: 803.520 secs <br>
+>Average FPS : 0.10 <br>
